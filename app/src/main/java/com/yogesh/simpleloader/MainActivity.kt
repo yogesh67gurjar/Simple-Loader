@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Toast
+import com.yogesh.loader.showLoader
 
 import com.yogesh.simpleloader.databinding.ActivityMainBinding
 
@@ -14,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
+
+        activityMainBinding.showLoader.setOnClickListener {
+            showLoader(activityMainBinding.rootLayout, this)
+        }
     }
 }
