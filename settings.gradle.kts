@@ -5,16 +5,16 @@ pluginManagement {
         gradlePluginPortal()
         maven("https://jitpack.io")
     }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven("https://jitpack.io")
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google()
+            mavenCentral()
+            maven("https://jitpack.io")
+        }
     }
 }
 
-rootProject.name = "Simple Loader"
-include(":app")
-include(":Loader")
+    rootProject.name = "Simple Loader"
+    include(":app")
+    include(":Loader")
