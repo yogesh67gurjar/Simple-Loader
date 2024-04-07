@@ -8,8 +8,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
             groupId = "com.yogesh.loader"
             artifactId = "simple-loader"
-            version = "1.20"
-
+            version = "1.3"
         }
     }
 }
