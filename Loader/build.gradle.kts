@@ -1,17 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("maven-publish")
 }
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            groupId = "com.yogesh.loader"
-            artifactId = "simple-loader"
-            version = "2.0"
-        }
-    }
-}
+
 
 android {
     namespace = "com.yogesh.loader"
