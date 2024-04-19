@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.yogesh.simpleloader"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.yogesh.simpleloader"
