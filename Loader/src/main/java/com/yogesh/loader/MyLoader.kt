@@ -1,12 +1,10 @@
 package com.yogesh.loader
 
 import android.content.Context
-import android.graphics.Color
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
@@ -65,10 +63,7 @@ object MyLoader {
         }
     }
 
-    public fun showLoader(
-        parentLayout: ViewGroup,
-        context: Context
-    ) {
+    public fun showLoader(parentLayout: ViewGroup, context: Context) {
         val myLoader = parentLayout.findViewById<LottieAnimationView>(R.id.myLoader)
         val overlay = parentLayout.findViewById<View>(R.id.overlay)
 
@@ -107,11 +102,7 @@ object MyLoader {
         }
     }
 
-    public fun showLoader(
-        parentLayout: ViewGroup,
-        context: Context,
-        lottieJsonAnim: Int?
-    ) {
+    public fun showLoader(parentLayout: ViewGroup, context: Context, lottieJsonAnim: Int?) {
         val myLoader = parentLayout.findViewById<LottieAnimationView>(R.id.myLoader)
         val overlay = parentLayout.findViewById<View>(R.id.overlay)
 
@@ -153,11 +144,7 @@ object MyLoader {
         }
     }
 
-    public fun showLoader(
-        parentLayout: ViewGroup,
-        sizeInDp: Int?,
-        context: Context
-    ) {
+    public fun showLoader(parentLayout: ViewGroup, sizeInDp: Int?, context: Context) {
         val myLoader = parentLayout.findViewById<LottieAnimationView>(R.id.myLoader)
         val overlay = parentLayout.findViewById<View>(R.id.overlay)
 
@@ -200,7 +187,6 @@ object MyLoader {
             parentLayout.addView(myLoaderNew, lottieLayoutParams)
         }
     }
-
 
     public fun hideLoader(parentLayout: ViewGroup) {
         val myLoader = parentLayout.findViewById<LottieAnimationView>(R.id.myLoader)
